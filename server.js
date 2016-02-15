@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 var app = express();
+var port = var port = process.env.PORT || 8080;
 // var majorController = require("./server/controller/major.controller");
 // var schoolController = require("./server/controller/school.controller");
 
@@ -31,6 +32,6 @@ app.get('/', function(req,res){
 // //School
 // app.get("/api/school/:school_name", schoolController.findBySchool);
 
-app.listen('3000', function(){
-	console.log("Listening on port 3000...");
+app.listen(port, function(){
+	console.log("Listening on port " + port);
 });
