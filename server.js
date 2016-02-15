@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
 var app = express();
-var port = var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080;
 // var majorController = require("./server/controller/major.controller");
 // var schoolController = require("./server/controller/school.controller");
 
