@@ -1,5 +1,5 @@
 <DOCTYPE! html>
-<html>
+<html ng-app="nuride">
 	<head>
 		<meta charset="UTF-8">
 		<title>NURide</title>
@@ -9,6 +9,7 @@
 	</head>
 
 	<body>
+			<!--facebook stuff
 			<script>
 			  window.fbAsyncInit = function() {
 			    FB.init({
@@ -25,45 +26,22 @@
 			     js.src = "//connect.facebook.net/en_US/sdk.js";
 			     fjs.parentNode.insertBefore(js, fjs);
 			   }(document, 'script', 'facebook-jssdk'));
-			</script>
+			</script> -->
 
-			<div class="body">
-			<p class="title" style="text-align: center; color: white; "> Select Pickup Location & Destination</p>
-			<div class="container">
-				<form> 	
-					
-	    		<div class="form-group">
-			      <label for="Select">From:</label>
-			      <select id="Select" class="form-control">
-			      	<option></option>
-			      	<option>Northwestern University</option>
-			      	<option>O'Hare</option>
-			      	<option>Midway</option>
-			      </select>
-			    </div>
-			    
-			    <div class="form-group">
-			      <label for="Select">To:</label>
-			      <select id="Select" class="form-control">
-			      	  <option></option>
-				      <option>Northwestern University</option>
-				      <option>O'Hare</option>
-				      <option>Midway</option>
-			      </select>
-			    </div>
-	   
-	    		<button type="submit" class="btn btn-primary">Next</button>
-	  
-			</form>
-	</div>
-</div>
+			<!-- Injects view from app.js -->
+			<div ui-view></div>
+
 		<script src="../node_modules/jquery/dist/jquery.js"></script>
 		<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    	<script type="text/javascript">
+		<script src="../node_modules/angular/angular.js"></script>
+		<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="../node_modules/angular-cookies/angular-cookies.js"></script>	
+		<script src="../app/app.js"></script>
+		<script src="../app/controllers/home.controller.js"></script>
+    	<!-- <script type="text/javascript">
     		document.getElementById("myButton").onclick = function () {
         	location.href = "secondPage.html";
-    	};</script>
-</script>
+    	};</script> -->
    </body>
 </html>
 
