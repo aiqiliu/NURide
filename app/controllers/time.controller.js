@@ -3,6 +3,9 @@
 	.controller("TimeController",["$scope", "$state", "$http", "$cookies", function($scope, $state, $http, $cookies){
 		$(function() {
 		    $( "#datepicker" ).datepicker();
+		     $('#timepicker1').timepicker();
 		  });
+
+
 	}]);
 }());

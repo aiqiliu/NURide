@@ -10,10 +10,23 @@
   				<input type="text" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon2">
 			</div>
 
+			<div class="input-group">
+				<div class="input-group bootstrap-timepicker timepicker">
+            <input id="timepicker1" type="text" class="form-control input-small">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+        </div>
+ 
+            </div>
+			<!-- <div class="input-group">
+    			<label for="Select">Time:</label>
+  				<input type="text" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon2">
+			</div> -->
+
 
     		<button type="submit" class="btn btn-primary" ng-click="findRide(source, destination)">Next</button>
 		</form>
 	</div>
+</div>
 </div>
 
 <h3 ng-disabled="!locations">{{locations}}</h3>

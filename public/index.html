@@ -6,40 +6,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../public/css/style.css">
 		<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">	
+
+		
+
+  		 <link type="text/css" href="css/bootstrap.min.css" />
+        <link type="text/css" href="css/bootstrap-timepicker.min.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
 	</head>
 
 	<body>
-			<!--facebook stuff
-			<script>
-			  window.fbAsyncInit = function() {
-			    FB.init({
-			      appId      : '1568353566817993',
-			      xfbml      : true,
-			      version    : 'v2.5'
-			    });
-			  };
-
-			  (function(d, s, id){
-			     var js, fjs = d.getElementsByTagName(s)[0];
-			     if (d.getElementById(id)) {return;}
-			     js = d.createElement(s); js.id = id;
-			     js.src = "//connect.facebook.net/en_US/sdk.js";
-			     fjs.parentNode.insertBefore(js, fjs);
-			   }(document, 'script', 'facebook-jssdk'));
-			</script> -->
-
-			<!-- Injects view from app.js -->
-			<div ui-view></div>
-
 			
+			<div ui-view></div>
+		<!--facebook sdk
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '484044525131858',
+		      xfbml      : true,
+		      version    : 'v2.5'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
+	-->
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="../node_modules/angular/angular.js"></script>
 		<script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 		<script src="../node_modules/angular-cookies/angular-cookies.js"></script>	
-		<script src="../app/app.js"></script>
+		<script src="../app/app.js"></script>	
 		<script src="../app/controllers/home.controller.js"></script>
 		<script src="../app/controllers/time.controller.js"></script>
  
