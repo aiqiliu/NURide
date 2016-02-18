@@ -1,0 +1,21 @@
+<div class="body">
+
+	
+	<p class="title" style="text-align: center; color: white; "> Select Pickup Time</p>
+	
+	<div class="container">
+		<form> 			
+    		<div class="input-group">
+    			<label for="Select">Date:</label>
+  				<input type="text" class="form-control" id="datepicker" placeholder="" aria-describedby="basic-addon2">
+			</div>
+
+
+    		<button type="submit" class="btn btn-primary" ng-click="findRide(source, destination)">Next</button>
+		</form>
+	</div>
+</div>
+
+<h3 ng-disabled="!locations">{{locations}}</h3>
+
+

@@ -8,10 +8,10 @@
 					templateUrl: "app/views/home.html",
 					controller: "HomeController"
 				})
-				.state("signUp", {
-					url: "/signup",
-					templateUrl: "app/signup/signup.html",
-					controller: "SignUpController"
+				.state("time", {
+					url: "/time",
+					templateUrl: "app/views/time.html",
+					controller: "TimeController"
 				})
 				.state("major", {
 					url: "/major",
